@@ -10,10 +10,10 @@ app = FastAPI()
 
 class UserInput(BaseModel):
     name: str | None = None
-    birth_date: str
-    birth_time: str
-    birth_place: str
-    question: str
+    birth_date: str | None = None
+    birth_time: str | None = None
+    birth_place: str | None = None
+    question: str | None = ""
 
 
 # ---------- MOON PHASE ----------
